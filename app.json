@@ -1,0 +1,50 @@
+{
+    "name": "Auto-Approved-Bot",
+    "description": "Iam Auto-Approved-Bot",
+    "keywords": [
+        "Auto",
+        "Approved",
+        "Group",
+        "Invite",
+        "Link",
+        "Bot"
+    ],
+    "repository": "https://github.com/dor3Monbotz/DoraAutoApproveBot",
+    "env": {
+        "API_ID": {
+            "description": "Your APP ID",
+            "value": ""
+        },
+        "API_HASH": {
+            "description": "Your API Hash",
+            "value": ""
+        },
+        "BOT_TOKEN": {
+            "description": "Your Bot Token From @BotFather",
+            "value": ""
+        },
+        "CHAT_ID": {
+            "description": "Working Group ID",
+            "value": ""
+        },
+        "APPROVED_WELCOME": {
+            "description": "APPROVED_WELCOME On Or Off",
+            "value": "on"
+        },
+        "APPROVED_WELCOME_TEXT": {
+            "description": "APPROVED_WELCOME_TEXT : Welcome Text",
+            "value": "ʜᴇʟʟᴏ {mention}\nᴡᴇʟᴄᴏᴍᴇ ᴛᴏ {title}\n\nʏᴏᴜ ɢᴇᴛ ᴀᴜᴛᴏ ᴀᴘᴘʀᴏᴠᴇᴅ ʙʏ ᴍᴇ\n ᴘʟᴇᴀsᴇ ᴊᴏɪɴ ᴏᴜʀ ᴄʜᴀɴɴᴇʟ @LMbackups "
+        }
+    },
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}
